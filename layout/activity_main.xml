@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/Nombre" />
+
+    <EditText
+        android:id="@+id/Fecha"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:inputType="textPersonName"
+        android:text="@string/fecha" />
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="119dp"
+        android:layout_gravity="center"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="@string/Telefono" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/Email" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:text="@string/Descripcion" />
+
+    <Button
+        android:id="@+id/BotonG"
+        android:layout_width="135dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:onClick="GuardarG"
+         android:background="@color/boton"
+        android:text="@string/Boton1" />
+
+
+
+
+</LinearLayout>
